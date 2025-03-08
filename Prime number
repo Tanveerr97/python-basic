@@ -1,0 +1,13 @@
+def is_prime(n):
+    if n < 2:
+        return False  # Numbers less than 2 are not prime
+    
+    for i in range(2, n):
+        if n % i == 0:
+            return False  # If divisible by any number, it's not prime
+    
+    return True  # If no divisors found, it's prime
+
+# Example usage
+print(is_prime(11))  # Output: True
+print(is_prime(15))  # Output: False
