@@ -1,0 +1,11 @@
+def count_lines_in_file(filename):
+    with open(filename, 'r') as file:
+        line_count = 0
+        for line in file:
+            line_count += 1
+    return line_count
+
+# Example usage
+filename = 'example.txt'  # Replace with your file path
+lines = count_lines_in_file(filename)
+print(f'The file contains {lines} lines.')
