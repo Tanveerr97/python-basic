@@ -1,0 +1,31 @@
+#non-repeating character is found
+from collections import Counter
+
+def first_non_repeating_char(s):
+    char_count = Counter(s)
+
+    for char in s:
+        if char_count[char] == 1:
+            return char
+
+    return None  
+s = "swiss"
+result = first_non_repeating_char(s)
+print(result)  # Output: 'w'
+******************************************************************
+#repeating character is found
+from collections import Counter
+
+def first_repeating_char(s):
+    char_count = Counter(s)
+
+    for char in s:
+        if char_count[char] > 1:
+            return char
+
+    return None  
+
+# Example usage
+s = "swiss"
+result = first_repeating_char(s)
+print(result)  #s
