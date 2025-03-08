@@ -1,0 +1,29 @@
+def find_missing_number(arr): #natural number
+    n = len(arr) + 1 
+    expected_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    missing_number = expected_sum - actual_sum
+    return missing_number
+arr = [1, 2, 4, 5, 6]
+result = find_missing_number(arr)
+print(result)  # Output: 3
+******************************************************************************
+def find_missing_number(arr): #odd number
+    n = len(arr) + 1 
+    expected_sum  = n * n
+    actual_sum = sum(arr)
+    missing_number = expected_sum - actual_sum
+    return missing_number
+arr = [1,3,5,9]
+result = find_missing_number(arr)
+print(result)  # Output: 7
+***************************************************************
+def find_missing_number(arr): #even number
+    n = len(arr) + 1 
+    expected_sum  = n * (n+1)
+    actual_sum = sum(arr)
+    missing_number = expected_sum - actual_sum
+    return missing_number
+arr = [2,4,8]
+result = find_missing_number(arr)
+print(result)  # Output: 6
