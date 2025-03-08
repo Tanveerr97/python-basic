@@ -10,26 +10,23 @@ def generate_anagrams(word):
 word = "veer"
 anagrams = generate_anagrams(word)
 print(anagrams)
-******************************************
-# for checking anagrams
+
 def are_anagrams(str1,str2):
     return sorted(str1)==sorted(str2)
 
 words = ['eerv', 'vere', 'reev', 'ever', 'evre', 'vree', 'veer', 'eevr', 'reve', 'erve', 'erev', 'rvee']
 
-# Check if all words are anagrams of the first word
 result = all(are_anagrams(words[0], word) for word in words)
 
 print(result)  # True if all are anagrams of the first word, False otherwise
 *************************
 import itertools
 
-# Define the list
 elements = ['a', 'b', 'c']
 
-# Generate all permutations
+
 permutations = itertools.permutations(elements)
 
-# Print the permutations
+
 for perm in permutations:
     print(perm)
